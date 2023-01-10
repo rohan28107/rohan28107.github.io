@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, ListItem, SimpleGrid, Spacer, UnorderedList } from '@chakra-ui/react'
+import { Box, Heading, Image, ListItem, SimpleGrid, Spacer, UnorderedList } from '@chakra-ui/react'
 import React from 'react'
 
 const About = () => {
