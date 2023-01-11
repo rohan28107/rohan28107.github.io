@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <div>
         <Heading as='h2'>Skills</Heading>
-        <SimpleGrid columns={[2, null, 5]} spacing='40px'>
+        <SimpleGrid columns={[3, null, 5]} spacing='40px'>
             <Box>
                 <Image src={javascript} alt='javascript' width={90} height={90}/>
                 <Heading as='h3'>JavaScript</Heading>
