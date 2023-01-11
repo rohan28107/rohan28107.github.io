@@ -5,8 +5,8 @@ import {BsFileEarmarkPerson, BsGithub} from "react-icons/bs"
 const Home = () => {
   return (
     <SimpleGrid columns={[2, null, 2]} spacing='40px' marginTop={30} height='450px'>
-        <Box border='1px solid red' height='auto' margin='auto'  padding='60px'>
-        {/* padding='50px' size='4xl' */}
+        <Box  height='auto' margin='auto'  padding='60px'>
+        {/* padding='50px' size='4xl' border='1px solid red' */}
             <Heading as='h1' fontSize='9xl' >Hello 👋,<span > I'm Rohan Gajare </span> </Heading>
             {/* <Image src='https://media.tenor.com/2CC_MxnlCwEAAAAM/shake-hand.gif' alt='wave' height={50} width={60}/> */}
             <Heading as='h2' size='3xl'>Aspiring Full Stack Web Developer at Masai School, Life Long Learner.</Heading>
@@ -25,6 +25,7 @@ const Home = () => {
                   colorScheme='teal'
                   variant='outline'
                   fontSize='20px'
+                  color='aliceblue;'
                 >
                   Resume
                 </Button>
@@ -39,6 +40,7 @@ const Home = () => {
                   height='48px'
                   width='150px'
                   fontSize='20px'
+                  color='aliceblue;'
                   // border='3px' 
                 >
                   GitHub
@@ -47,7 +49,8 @@ const Home = () => {
             </Stack>
             </Center>
         </Box>
-        <Box border='1px solid red' height='auto' alignItems='center' paddingTop='15%'>
+        <Box  height='auto' alignItems='center' paddingTop='15%'>
+          {/* border='1px solid red' */}
           {/* <Image 
           // https://www.alexanderkays.com/content/images/size/w2000/2022/06/how-to-become-a-software-engineer-without-a-degree.webp
               src='https://avatars.githubusercontent.com/u/112626910?v=4' 

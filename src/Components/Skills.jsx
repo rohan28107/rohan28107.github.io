@@ -4,7 +4,7 @@ import amazonaws from "../Files/Images/amazon-aws.png";
 import chakra from "../Files/Images/ChakraUi.png";
 import css from "../Files/Images/css.png";
 import express from "../Files/Images/express.png";
-import github from "../Files/Images/github.png";
+import git from "../Files/Images/git.png";
 import html from "../Files/Images/html.png";
 import javascript from "../Files/Images/javascript.png";
 import jest from "../Files/Images/jest.png";
@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <div>
         <Heading as='h2'>Skills</Heading>
-        <SimpleGrid columns={[3, null, 5]} spacing='40px'>
+        <SimpleGrid columns={[3, null, 5]} spacing='25px'>
             <Box>
                 <Image src={javascript} alt='javascript' width={90} height={90}/>
                 <Heading as='h3'>JavaScript</Heading>
@@ -38,8 +38,8 @@ const Skills = () => {
                 <Heading as='h3'>CSS</Heading>
             </Box>
             <Box>
-                <Image src={github} alt='github' width={90} height={90}/>
-                <Heading as='h3'>Github</Heading>
+                <Image src={git} alt='git' width={90} height={90}/>
+                <Heading as='h3'>Git</Heading>
             </Box>
             <Box>
                 <Image src={express} alt='express' width={90} height={90}/>
@@ -59,7 +59,7 @@ const Skills = () => {
             </Box>
             <Box>
                 <Image src={mongodb} alt='mongodb' width={90} height={90}/>
-                <Heading as='h3'>Mongodb</Heading>
+                <Heading as='h3'>MongoDB</Heading>
             </Box>
             <Box>
                 <Image src={redux} alt='redux' width={90} height={90}/>
