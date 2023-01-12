@@ -166,10 +166,10 @@ const Navbar = () => {
         <Box width="100%" h={{sm:"40px",md:"50px",lg:"70px"}} bgColor="#234a84" p={3} >
             <Flex justifyContent="space-between">
                 <Box p={{sm:2,md:2,lg:2}} w={{sm:"40%",md:"30%",lg:"13%"}}>
-                    <Flex justifyContent="space-around">
+                    {/* <Flex justifyContent="space-around"> */}
                       <Text textStyle="Firsthead">Rohan Gajare</Text> 
                       {/* <Text textStyle="Secondhead">Gajare</Text>  */}
-                    </Flex>
+                    {/* </Flex> */}
                 </Box>
                 <Box  w={{sm:"70%",md:"60%",lg:"50%"}} h={{sm:"50%",md:"60%",lg:"70%"}}>
                     <UnorderedList listStyleType="none">

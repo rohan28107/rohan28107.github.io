@@ -1,17 +1,18 @@
 import { Box, Heading, Image, ListItem, SimpleGrid, Spacer, UnorderedList } from '@chakra-ui/react'
 import React from 'react'
+import Styles from "./About.module.css";
 
 const About = () => {
   return (
-    <div>
-        <SimpleGrid columns={[1, null, 2]} spacing='30px'>
+    <div className={Styles.about} >
+        <SimpleGrid columns={[1, null, 2]} spacing='30px' height="380px" padding='10%'>
             <Box > 
               {/* border='1px solid red' */}
             <Image
           // https://www.alexanderkays.com/content/images/size/w2000/2022/06/how-to-become-a-software-engineer-without-a-degree.webp
               src='https://performetris.com/wp-content/uploads/performetris-banner.png' 
               alt="SVG"
-              width='80%'
+              width='100%'
               height='90%'
           />
             </Box>

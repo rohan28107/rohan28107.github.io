@@ -1,25 +1,28 @@
 import { Box, Heading, Image, SimpleGrid  } from '@chakra-ui/react'
 import React from 'react'
-import amazonaws from "../Files/Images/amazon-aws.png";
-import chakra from "../Files/Images/ChakraUi.png";
-import css from "../Files/Images/css.png";
-import express from "../Files/Images/express.png";
-import git from "../Files/Images/git.png";
-import html from "../Files/Images/html.png";
-import javascript from "../Files/Images/javascript.png";
-import jest from "../Files/Images/jest.png";
-import mongodb from "../Files/Images/mongodb.png";
-import nodejs from "../Files/Images/nodejs.png";
-import react from "../Files/Images/react.png";
-import redux from "../Files/Images/redux.png";
-import typescript from "../Files/Images/typescript.png";
-import githubactions from "../Files/Images/githubaction.png";
-import npm from "../Files/Images/npm.png";
+// import amazonaws from "../Files/Images/amazon-aws.png";
+import amazonaws from "./Images/amazon-aws.png";
+import chakra from "./Images/ChakraUi.png";
+import css from "./Images/css.png";
+import express from "./Images/express.png";
+import git from "./Images/git.png";
+import html from "./Images/html.png";
+import javascript from "./Images/javascript.png";
+import jest from "./Images/jest.png";
+import mongodb from "./Images/mongodb.png";
+import nodejs from "./Images/nodejs.png";
+import react from "./Images/react.png";
+import redux from "./Images/redux.png";
+import typescript from "./Images/typescript.png";
+import githubactions from "./Images/githubaction.png";
+import npm from "./Images/npm.png";
+import Styles from "./Skills.module.css";
+
 
 const Skills = () => {
   return (
-    <div>
-        <Heading as='h2'>Skills</Heading>
+    <div className={Styles.Skills}>
+        <Heading as='h2'>Languages & Technologies</Heading>
         <SimpleGrid columns={[3, null, 5]} spacing='25px'>
             <Box>
                 <Image src={javascript} alt='javascript' width={90} height={90}/>
