@@ -40,7 +40,7 @@ const projectData = [
 ]
 
 const Project = () => {
-
+// dime
   return (
     <div className={Styles.project}>
         <Heading as='h1'>Projects</Heading>
