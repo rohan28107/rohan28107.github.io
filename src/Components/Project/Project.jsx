@@ -1,12 +1,11 @@
-import { Box, ButtonGroup, Flex, Heading, Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
-import { Button } from 'react-scroll';
 import Styles from "./Project.module.css";
 import desire from "./Images/desire_cart_page.png";
 import first from "./Images/first_post_page.png";
 import grow from "./Images/grow_smarter_page.png";
-import { Link } from 'react-router-dom';
-import { BsGithub, BsLink45Deg } from 'react-icons/bs';
+// import { Link } from 'react-router-dom';
+// import { BsGithub, BsLink45Deg } from 'react-icons/bs';
 
 
 const projectData = [
@@ -40,7 +39,7 @@ const projectData = [
 ]
 
 const Project = () => {
-// dime
+
   return (
     <div className={Styles.project}>
         <Heading as='h1'>Projects</Heading>
@@ -58,8 +57,8 @@ const Project = () => {
                 <Text>{project.description}</Text>
                 <Text>{project.technologies}</Text>
                 {/* <Stack direction='row' spacing={8} >
-                  <Link href={project.git_url} target='_blank' textDecoration='none'>
-                      <Button 
+                  <Link to={project.git_url} target='_blank' textDecoration='none'>
+                      <Button
                         leftIcon={<BsGithub />} 
                         bg='#234a84' 
                         variant='solid'
@@ -73,7 +72,7 @@ const Project = () => {
                         GitHub
                       </Button>
                     </Link>
-                    <Link href={project.live_url} target='_blank' textDecoration='none'>
+                    <Link to={project.live_url} target='_blank' textDecoration='none'>
                       <Button 
                         leftIcon={<BsLink45Deg />} 
                         bg='#234a84' 
@@ -88,8 +87,8 @@ const Project = () => {
                         Demo
                       </Button>
                     </Link>
-                </Stack>
-                */}
+                </Stack> */}
+               
               </Box>
             </Flex>
           ))}  
