@@ -1,6 +1,7 @@
 import { Box, Button, Center, Heading, Image, Link, SimpleGrid, Stack } from '@chakra-ui/react'
 import React from 'react'
 import {BsFileEarmarkPerson, BsGithub} from "react-icons/bs"
+
 import Styles from "./Home.module.css";
 
 const Home = () => {
@@ -20,14 +21,15 @@ const Home = () => {
                     size='xlarge'
                     height='48px'
                     width='150px'
-                    // border='3px' 
+                    border='none' 
                     leftIcon={<BsFileEarmarkPerson />} 
                     bg='#234a84' 
                     // variant='outline' 
                     colorScheme='teal'
                     variant='outline'
                     fontSize='20px'
-                    color='aliceblue;'
+                    // color='aliceblue'
+                    color='black'
                     // textDecoration="none"
                   >
                     Resume
@@ -43,8 +45,9 @@ const Home = () => {
                     height='48px'
                     width='150px'
                     fontSize='20px'
-                    color='aliceblue;'
-                    // border='3px' 
+                    // color='aliceblue;'
+                    color='black'
+                    border='none' 
                   >
                     GitHub
                   </Button>
@@ -66,6 +69,7 @@ const Home = () => {
             <Image
               borderRadius='250px'
               boxSize='350px'
+              // src='https://avatars.githubusercontent.com/u/112626910?v=4'
               src='https://avatars.githubusercontent.com/u/112626910?v=4'
               alt='Rohan Gajare'
             />
