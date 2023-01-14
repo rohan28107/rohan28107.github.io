@@ -156,11 +156,17 @@ import React from 'react'
 import {Box, Flex,ListItem,Text, UnorderedList} from "@chakra-ui/react";
 import Styles from "./Navbar.module.css";
 //import About from '../ABOUT/About';
-import {Link} from "react-scroll"
-
+// import {Link} from "react-scroll"
+import Resume from "./Rohan_Gajare_Resume.pdf";
+// import {Link as RouterLink } from "react-router-dom";
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
     
+    const handleDownloadNewPageResume = () => {
+        const newWindow = window.open(Resume, "_blank", "noopener,noreferrer");
+        if (newWindow) newWindow.opener = null;
+      };
   return (
     <div className={Styles.navbar}>
         <Box width="100%" h={{sm:"40px",md:"50px",lg:"70px"}} bgColor="#234a84" p={3} >
@@ -175,28 +181,36 @@ const Navbar = () => {
                     <UnorderedList listStyleType="none">
                         <Flex justifyContent="space-around" alignItems={"center"}>
 
-                        <Link to="home" activeClass="active" spy={true} smooth={true} offset={-100} duration={200} >
+                        <Link to="home"  smooth duration={500} activeClass="active" spy={true} offset={-100} >
                             <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>HOME</ListItem>
                         </Link>
                         
-                        <Link to="about" activeClass="active" spy={true} smooth={true} offset={-100} duration={500} >
+                        <Link to="about" smooth duration={500} activeClass="active" spy={true} offset={-100}  >
                             <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>ABOUT</ListItem>
                         </Link>
 
-                        <Link to="projects" spy={true} smooth={true} offset={-100} duration={500} >
+                        <Link to="projects" smooth duration={500}  spy={true} offset={-100} >
                             <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>PROJECTS</ListItem>
                         </Link>
 
-                        <Link to="skills" spy={true} smooth={true} offset={-100} duration={500} >
+                        <Link to="skills" smooth duration={500} spy={true} offset={-100}  >
                             <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>SKILLS</ListItem>
                         </Link>
 
-                        <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} >
+                        <Link to="contact" spy={true} offset={-100} >
                             <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>CONTACTS</ListItem>
                         </Link>
-
-                        <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>RESUME</ListItem>
                         
+                        <Link
+                            onClick={handleDownloadNewPageResume}
+                            to={Resume}
+                            target="_blank"
+                            download
+                            cursor="pointer"
+                        >
+                        
+                        <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>RESUME</ListItem>
+                        </Link>
                         </Flex>
                     </UnorderedList>
 
@@ -209,3 +223,4 @@ const Navbar = () => {
 
 export default Navbar
 
+// smooth={true} smooth duration={500}

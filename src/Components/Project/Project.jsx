@@ -18,7 +18,7 @@ const projectData = [
     git_url: "https://github.com/rohan28107/efficient-wool-4085/tree/master/desire_cart",
     live_url: "https://desire-cart.vercel.app/",
     description: "Desire Cart is a E-commerce Website. Where users can browse various products. You can search various products also filter the products by category. Has Pagination with 10 products per page.It has Dark and light mode.",
-    technologies: [<SiHtml5 />, <SiJavascript />, <SiCss3 />, <SiReact />, <SiChakraui />],
+    technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <SiReact />, <SiChakraui />],
     image:desire
   },
   { 
@@ -27,7 +27,7 @@ const projectData = [
     git_url: "https://github.com/HANUMAT-SHARAN/wicked-edge-6587",
     live_url: "https://dazzling-buttercream-31808d.netlify.app/index.html",
     description: "Grow Smarter is a SAAS company which provides various service. It has Customer support chat-box. Has pricing page with different pricing for different countries.",
-    technologies: [<SiHtml5 />, <SiJavascript />, <SiCss3 />],
+    technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
     icon1: SiJavascript,
     image:grow
   },
@@ -37,7 +37,7 @@ const projectData = [
     git_url: "https://github.com/rohan28107/apathetic-bikes-8091",
     live_url: "https://zesty-cactus-26303e.netlify.app/",
     description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. Has a carousel of images on Home page. Links to all the social media pages of First Post.",
-    technologies: [<SiHtml5 />, <SiJavascript />, <SiCss3 />],
+    technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
     image:first
   }
 ];
