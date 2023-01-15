@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Image, Link, Text,} from '@chakra-ui/react'
+import { Box, Button, chakra, Flex, Heading, Image, Link, shouldForwardProp, Text,} from '@chakra-ui/react'
 import React from 'react'
 import Styles from "./Project.module.css";
 import desire from "./Images/desire_cart_page.png";
@@ -9,7 +9,15 @@ import { Fade } from "react-awesome-reveal";
 import { BsGithub } from 'react-icons/bs';
 import { SiChakraui, SiCss3, SiHtml5, SiJavascript, SiReact } from "react-icons/si"
 import { FiExternalLink } from "react-icons/fi";
+import { motion, isValidMotionProp } from "framer-motion";
 
+const ChakraBox = chakra(motion.div, {
+  /**
+   * Allow motion props and non-Chakra props to be forwarded.
+   */
+  shouldForwardProp: (prop) =>
+    isValidMotionProp(prop) || shouldForwardProp(prop),
+});
 
 const projectData = [
   { 
@@ -46,6 +54,14 @@ const projectData = [
 const Project = () => {
 
   return (
+    <ChakraBox
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-15, 0], opacity: 1 }}
+        transition={{
+          duration: 1,
+          delay: 0.3,
+        }}
+      >
     <div className={Styles.project}>
       
         <Box w="80%" margin={"auto"} p={7} h={{sm:"auto",md:"auto",lg:"auto"}} textAlign={{sm:"center",md:"center",lg:"initial"}}>
@@ -114,7 +130,9 @@ const Project = () => {
         }
         </Fade>
         </Box>
+        
     </div>
+    </ChakraBox>
   )
 }
 

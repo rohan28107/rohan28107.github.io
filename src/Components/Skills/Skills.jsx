@@ -1,8 +1,8 @@
-import { Box, Heading, Image, SimpleGrid  } from '@chakra-ui/react'
+import { Box, Heading, Image, shouldForwardProp, chakra, SimpleGrid  } from '@chakra-ui/react'
 import React from 'react'
 // import amazonaws from "../Files/Images/amazon-aws.png";
 import amazonaws from "./Images/amazon-aws.png";
-import chakra from "./Images/ChakraUi.png";
+import chakras from "./Images/ChakraUi.png";
 import css from "./Images/css.png";
 import express from "./Images/express.png";
 import git from "./Images/git.png";
@@ -17,11 +17,27 @@ import typescript from "./Images/typescript.png";
 import githubactions from "./Images/githubaction.png";
 import npm from "./Images/npm.png";
 import Styles from "./Skills.module.css";
+import { motion, isValidMotionProp } from "framer-motion";
 
+const ChakraBox = chakra(motion.div, {
+  /**
+   * Allow motion props and non-Chakra props to be forwarded.
+   */
+  shouldForwardProp: (prop) =>
+    isValidMotionProp(prop) || shouldForwardProp(prop),
+});
 
 const Skills = () => {
   return (
     <div className={Styles.Skills}>
+        <ChakraBox
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-15, 0], opacity: 1 }}
+        transition={{
+          duration: 1,
+          delay: 0.3,
+        }}
+      >
         <Heading as='h2'>Languages & Technologies</Heading>
         <SimpleGrid columns={[3, null, 5]} spacing='25px'>
             <Box>
@@ -57,7 +73,7 @@ const Skills = () => {
                 <Heading as='h3'>Nodejs</Heading>
             </Box>
             <Box>
-                <Image src={chakra} alt='ChakraUi' width={90} height={90}/>
+                <Image src={chakras} alt='ChakraUi' width={90} height={90}/>
                 <Heading as='h3'>ChakraUi</Heading>
             </Box>
             <Box>
@@ -85,7 +101,7 @@ const Skills = () => {
                 <Heading as='h3'>NPM</Heading>
             </Box>            
         </SimpleGrid>
-        
+        </ChakraBox>
     </div>
   )
 }

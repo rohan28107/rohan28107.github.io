@@ -10,9 +10,9 @@ import {
 import React from "react";
 // import { GrLinkedinOption } from "react-icons/gr";
 import { FiMail } from "react-icons/fi";
-import { motion, isValidMotionProp } from "framer-motion";
 import ContactForm from "./ContactForm";
 import { BsFillPhoneFill, BsGithub, BsLinkedin} from "react-icons/bs";
+import { motion, isValidMotionProp } from "framer-motion";
 
 const ChakraBox = chakra(motion.div, {
   /**
@@ -58,9 +58,10 @@ const Contact = () => {
           // className={styles.contact_form}
         >
           <Box
-            width={{ base: "80%", md: "50%" }}
+            width={{ base: "40%", md: "20%" }}
             padding={{ base: "5px", md: "20px" }}
-            height={"100%"}
+            height={"40%"}
+            // border="1px solid red"
           >
             
             <Text textAlign={"justify"} fontSize="16px" padding='5%'>
