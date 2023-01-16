@@ -10,7 +10,7 @@ import {
 import React from "react";
 // import { GrLinkedinOption } from "react-icons/gr";
 import { FiMail } from "react-icons/fi";
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 import { BsFillPhoneFill, BsGithub, BsLinkedin} from "react-icons/bs";
 import { motion, isValidMotionProp } from "framer-motion";
 
