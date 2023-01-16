@@ -13,7 +13,7 @@ const ChakraBox = chakra(motion.div, {
 
 const About = () => {
   return (
-    <div className={Styles.about} >
+    <Box id="about" className={Styles.about} >
       <ChakraBox
         initial={{ opacity: 0 }}
         whileInView={{ y: [-15, 0], opacity: 1 }}
@@ -49,7 +49,7 @@ const About = () => {
           </SimpleGrid>
         </ChakraBox>
        
-    </div>
+    </Box>
   )
 }
 

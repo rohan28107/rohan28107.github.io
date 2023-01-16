@@ -15,7 +15,7 @@ const ChakraBox = chakra(motion.div, {
 
 const GitStats = () => {
   return (
-    <div className={Styles.Stats}>
+    <Box id="gitstats" className={Styles.Stats}>
       <ChakraBox
         initial={{ opacity: 0 }}
         whileInView={{ y: [-15, 0], opacity: 1 }}
@@ -42,7 +42,7 @@ const GitStats = () => {
               </Box>
           </Box>
         </ChakraBox>
-    </div>
+    </Box>
   )
 }
 
