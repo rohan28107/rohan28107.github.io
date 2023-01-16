@@ -48,7 +48,7 @@ const Navbar = () => {
                             <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>SKILLS</ListItem>
                         </Link> */}
 
-                        
+                        {/* ss */}
 
                         <Link to="contact" spy={true} offset={-100} smooth duration={500}>
                             <ListItem textStyle="Navbar" p="12px" _hover={{backgroundColor: "#fafcf9",borderRadius:"10px",color:"black"}}>CONTACTS</ListItem>
