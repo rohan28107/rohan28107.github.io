@@ -117,11 +117,11 @@ const Contact = () => {
             padding={{ base: "25px", md: "20px" }}
             color="black"
           >
-            <Box borderRadius="12px" padding='10px' border='1px solid black' margin='5%' marginRight="10%">
+            {/* <Box borderRadius="12px" padding='10px' border='1px solid black' margin='5%' marginRight="10%">
               <Heading as='h3'>Email Me📩</Heading>
-              {/* Contact Form */}
+
               <ContactForm />
-            </Box>
+            </Box> */}
           </Box>
         </Box>
         {/* </Box> */}

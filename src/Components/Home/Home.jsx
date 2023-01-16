@@ -7,7 +7,7 @@ import Styles from "./Home.module.css";
 const Home = () => {
   return (
     <div className={Styles.home}>
-      <SimpleGrid  columns={[2, null, 2]} spacing='40px' marginTop={20} height='500px' padding='10%'>
+      <SimpleGrid  columns={[1, null, 2]} spacing='40px' marginTop={20} height='500px' padding='10%'>
           <Box  height='auto' margin='auto'  padding='60px'>
           {/* padding='50px' size='4xl' border='1px solid red' */}
               <Heading as='h1' fontSize='9xl' >Hello 👋,<span > I'm Rohan Gajare </span> </Heading>
