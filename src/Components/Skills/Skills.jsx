@@ -1,8 +1,7 @@
-import { Box, Heading, Image, shouldForwardProp, chakra, SimpleGrid  } from '@chakra-ui/react'
+import { Box, Heading, Image, shouldForwardProp, chakra, SimpleGrid, Grid  } from '@chakra-ui/react'
 import React from 'react'
-// import amazonaws from "../Files/Images/amazon-aws.png";
 import amazonaws from "./Images/amazon-aws.png";
-import chakras from "./Images/ChakraUi.png";
+import chakraui from "./Images/ChakraUi.png";
 import css from "./Images/css.png";
 import express from "./Images/express.png";
 import git from "./Images/git.png";
@@ -19,6 +18,85 @@ import npm from "./Images/npm.png";
 import Styles from "./Skills.module.css";
 import { motion, isValidMotionProp } from "framer-motion";
 
+const skillsData = [
+    {
+        id:1,
+        skillName:"Javascript",
+        img: javascript
+    },
+    {
+        id:2,
+        skillName:"React",
+        img: react
+    },
+    {
+        id:3,
+        skillName:"HTML",
+        img: html
+    },
+    {
+        id:4,
+        skillName:"CSS",
+        img: css
+    },
+    {
+        id:5,
+        skillName:"Git",
+        img: git
+    },
+    {
+        id:6,
+        skillName:"Express",
+        img: express
+    },
+    {
+        id:7,
+        skillName:"Typescript",
+        img: typescript
+    },
+    {
+        id:8,
+        skillName:"Nodejs",
+        img: nodejs
+    },
+    {
+        id:9,
+        skillName:"ChakraUi",
+        img: chakraui
+    },
+    {
+        id:10,
+        skillName:"MongoDB",
+        img: mongodb
+    },
+    {
+        id:11,
+        skillName:"Redux",
+        img: redux
+    },
+    {
+        id:12,
+        skillName:"AWS",
+        img: amazonaws
+    },
+    {
+        id:13,
+        skillName:"Jest",
+        img: jest
+    },
+    {
+        id:14,
+        skillName:"Github Actions",
+        img: githubactions
+    },
+    {
+        id:15,
+        skillName:"NPM",
+        img: npm
+    }
+]
+
+
 const ChakraBox = chakra(motion.div, {
   /**
    * Allow motion props and non-Chakra props to be forwarded.
@@ -29,7 +107,7 @@ const ChakraBox = chakra(motion.div, {
 
 const Skills = () => {
   return (
-    <Box id="skills" className={Styles.Skills}>
+    <Box id="skills" height={["1000px","1000px","800px"]} className={Styles.Skills} margin="5px">
         <ChakraBox
         initial={{ opacity: 0 }}
         whileInView={{ y: [-15, 0], opacity: 1 }}
@@ -38,68 +116,17 @@ const Skills = () => {
           delay: 0.3,
         }}
         >
-        <Heading as='h2'>Languages & Technologies</Heading>
-        <SimpleGrid columns={[3, null, 5]} spacing='25px'>
-            <Box>
-                <Image src={javascript} alt='javascript' width={90} height={90}/>
-                <Heading as='h3'>JavaScript</Heading>
-            </Box>
-            <Box>
-                <Image src={react} alt='react' width={90} height={90}/>
-                <Heading as='h3'>React</Heading>
-            </Box>
-            <Box>
-                <Image src={html} alt='html' width={90} height={90}/>
-                <Heading as='h3'>HTML</Heading>
-            </Box>
-            <Box>
-                <Image src={css} alt='css' width={90} height={90}/>
-                <Heading as='h3'>CSS</Heading>
-            </Box>
-            <Box>
-                <Image src={git} alt='git' width={90} height={90}/>
-                <Heading as='h3'>Git</Heading>
-            </Box>
-            <Box>
-                <Image src={express} alt='express' width={90} height={90}/>
-                <Heading as='h3'>Express</Heading>
-            </Box>
-            <Box>
-                <Image src={typescript} alt='typescript'width={90} height={90} />
-                <Heading as='h3'>TypeScript</Heading>
-            </Box>
-            <Box>
-                <Image src={nodejs} alt='nodejs' width={90} height={90}/>
-                <Heading as='h3'>Nodejs</Heading>
-            </Box>
-            <Box>
-                <Image src={chakras} alt='ChakraUi' width={90} height={90}/>
-                <Heading as='h3'>ChakraUi</Heading>
-            </Box>
-            <Box>
-                <Image src={mongodb} alt='mongodb' width={90} height={90}/>
-                <Heading as='h3'>MongoDB</Heading>
-            </Box>
-            <Box>
-                <Image src={redux} alt='redux' width={90} height={90}/>
-                <Heading as='h3'>Redux</Heading>
-            </Box>
-            <Box>
-                <Image src={amazonaws} alt='amazonaws' width={90} height={90}/>
-                <Heading as='h3'>AWS</Heading>
-            </Box>
-            <Box>
-                <Image src={jest} alt='jest' width={90} height={90}/>
-                <Heading as='h3'>Jest</Heading>
-            </Box>
-            <Box>
-                <Image src={githubactions} alt='githubactions' width={90} height={90} />
-                <Heading as='h3'>Github Actions</Heading>
-            </Box>
-            <Box>
-                <Image src={npm} alt='npm' width={90} height={90}/>
-                <Heading as='h3'>NPM</Heading>
-            </Box>            
+        <Heading as='h2' textAlign={"center"} marginBottom="5%" >Languages & Technologies</Heading>
+        <SimpleGrid columns={[3, 4, 5]} width="100%" height={["850px","800px","500px"]} gap="30px" justifyContent={"center"}>
+                 {
+                    skillsData.map((skills) => (
+                        <Grid textAlign="center" justifyContent="center" id={skills.id} >
+                            {/* justifyContent={"center"}  alignItems="center" */}
+                            <Image src={skills.img} alt='css' width={90} height={90} />
+                            <Heading as='h5' fontSize={"xl"}>{skills.skillName}</Heading>
+                        </Grid>
+                    ))
+                 }
         </SimpleGrid>
         </ChakraBox>
     </Box>

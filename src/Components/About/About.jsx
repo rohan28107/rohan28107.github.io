@@ -13,7 +13,7 @@ const ChakraBox = chakra(motion.div, {
 
 const About = () => {
   return (
-    <Box id="about" className={Styles.about} >
+    <Box id="about" className={Styles.about} width="100%" height={["900px","900px","700px"]} >
       <ChakraBox
         initial={{ opacity: 0 }}
         whileInView={{ y: [-15, 0], opacity: 1 }}

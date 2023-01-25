@@ -1,9 +1,10 @@
-import { Box, Button, Center, chakra, Heading, Image, Link, shouldForwardProp, SimpleGrid, Stack } from '@chakra-ui/react'
+import { Box, Button, Center, chakra, Heading, Image, Link, shouldForwardProp, SimpleGrid, Stack, VStack } from '@chakra-ui/react'
 import React from 'react'
-import {BsFileEarmarkPerson, BsGithub} from "react-icons/bs"
-
+import { BsGithub } from "react-icons/bs"
+import Resume from "../../Files/Rohan_Gajare_Resume.pdf";
 import Styles from "./Home.module.css";
 import { motion, isValidMotionProp } from "framer-motion";
+import { AiOutlineFilePdf } from 'react-icons/ai';
 
 const ChakraBox = chakra(motion.div, {
   /**
@@ -13,8 +14,29 @@ const ChakraBox = chakra(motion.div, {
     isValidMotionProp(prop) || shouldForwardProp(prop),
 });
 const Home = () => {
+
+  const handleDownloadNewPageResume = () => {
+    const newWindow = window.open("https://drive.google.com/file/d/1dW4RpRe9nvD8pbw7erbV9NUjNx1O0S-Z/view?usp=share_link", "_blank", "noopener,noreferrer");
+
+    if (newWindow) newWindow.opener = null;
+
+    fetch(Resume).then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Rohan_Gajare_Resume.pdf';
+          alink.click();
+      })
+  })
+  };
+
+
   return (
-    <Box id="home" className={Styles.home}>
+    <Box id="home" className={Styles.home} width="100%" height={["1000px","700px"]} paddingTop="250px">
+      {/*   */}
         <ChakraBox
           initial={{ opacity: 0 }}
           whileInView={{ y: [-15, 0], opacity: 1 }}
@@ -23,18 +45,19 @@ const Home = () => {
             delay: 0.3,
           }}
         >
-          <SimpleGrid  columns={[1, null, 2]} spacing='40px' marginTop={20} height='500px' padding='10%'>
-              <Box  height='auto' margin='auto'  padding='60px'>
+          <SimpleGrid  columns={[1, 2, 2]} gap="20" >
+          {/* padding='20%'  */}
+              <VStack height='100%' width="100%" margin='auto' spacing={10} w={"90%"}>
               {/* padding='50px' size='4xl' border='1px solid red' */}
-                  <Heading as='h1' fontSize='9xl' >Hello 👋,<span > I'm Rohan Gajare </span> </Heading>
+                  <Heading as='h1' fontSize='4xl' >Hello 👋,<span > I'm Rohan Gajare </span> </Heading>
                   {/* <Image src='https://media.tenor.com/2CC_MxnlCwEAAAAM/shake-hand.gif' alt='wave' height={50} width={60}/> */}
-                  <Heading as='h2' size='2xl'>Aspiring Full Stack Web Developer at Masai School, Life Long Learner.</Heading>
+                  <Heading as='h4' size='sm'>Aspiring Full Stack Web Developer at Masai School, Life Long Learner.</Heading>
                   
                   <Center>
                   <Stack direction='row' spacing={8} >
-                    <Link href='https://drive.google.com/file/d/1dW4RpRe9nvD8pbw7erbV9NUjNx1O0S-Z/view?usp=share_link' target='_blank' textDecoration='none' download>
+                    {/* <Link href='https://drive.google.com/file/d/1dW4RpRe9nvD8pbw7erbV9NUjNx1O0S-Z/view?usp=share_link' target='_blank' textDecoration='none' download>
                       <Button 
-                        size='xlarge'
+                        size={['sm','md','xl']}
                         height='48px'
                         width='150px'
                         border='none' 
@@ -50,14 +73,39 @@ const Home = () => {
                       >
                         Resume
                       </Button>
-                    </Link>
+                    </Link> */}
+
+                    <Link
+                        onClick={handleDownloadNewPageResume}
+                        to="https://drive.google.com/file/d/1dW4RpRe9nvD8pbw7erbV9NUjNx1O0S-Z/view?usp=share_link"
+                        target="_blank"
+                        download
+                        cursor="pointer"
+                    >
+                      <Button
+                        // colorScheme={'teal'}
+                        bg='#234a84'
+                        mr={4}
+                        variant='solid'
+                        size={['sm','md','xl']}
+                        height='48px'
+                        width='150px'
+                        fontSize='20px'
+                        // color='aliceblue;'
+                        color='black'
+                        border='none'
+                        leftIcon={<AiOutlineFilePdf  />}
+                      >
+                        Resume
+                      </Button>
+                    </Link> 
 
                     <Link href='https://github.com/rohan28107' target='_blank' textDecoration='none'>
                       <Button 
                         leftIcon={<BsGithub />} 
                         bg='#234a84' 
                         variant='solid'
-                        size='xlarge'
+                        size={['sm','md','xl']}
                         height='48px'
                         width='150px'
                         fontSize='20px'
@@ -70,8 +118,8 @@ const Home = () => {
                     </Link>
                   </Stack>
                   </Center>
-              </Box>
-              <Box  height='auto' alignItems='center' paddingTop='10%' >
+              </VStack>
+              <Box  alignItems='center' w={"90%"}>
                 {/* border='1px solid red' paddingTop='30%'*/}
                 {/* <Image 
                 // https://www.alexanderkays.com/content/images/size/w2000/2022/06/how-to-become-a-software-engineer-without-a-degree.webp

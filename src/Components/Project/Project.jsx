@@ -54,7 +54,7 @@ const projectData = [
 const Project = () => {
 
   return (
-    <Box id="projects">
+    <Box id="projects" >
 
     
       <ChakraBox
@@ -67,23 +67,25 @@ const Project = () => {
         >
       <div className={Styles.project}>
         
-          <Box w="80%" margin={"auto"} p={7} h={{sm:"auto",md:"auto",lg:"auto"}} textAlign={{sm:"center",md:"center",lg:"initial"}}>
-              <Heading as='h2' mt={{sm:"40px",md:"40px",lg:"30px"}}>Projects</Heading>
-              <Heading as='h4'> My projects make use of a vast variety of latest technology tools. My best experience is to create React Project and JavaScript Projects. Below are some of my projects. All of the mentioned projects are on GitHub and have Live link.</Heading>
+          <Box w="80%" margin={"auto"} p={7} h={{sm:"auto",md:"auto",lg:"auto"}} textAlign="center">
+          {/* textAlign={{sm:"center",md:"center",lg:"center"}} */}
+              <Heading as='h2' marginBottom="2%" mt={{sm:"40px",md:"40px",lg:"30px"}}>Projects</Heading>
+              <Text fontSize={["md","xl"]} > My projects make use of a vast variety of latest technology tools. My best experience is to create React Project and JavaScript Projects. Below are some of my projects. All of the mentioned projects are on GitHub and have Live link.</Text>
           
           <Fade direction='left' cascade >
           {
             projectData.map((project) => (
               
-              <Box key={project.id} w="80%" margin={"auto"} marginBottom="5%" p={5} mt={{sm:"50px",md:"50px",lg:"40px"}} backgroundColor="#e2ebee" h="auto" border="1px solid black" borderRadius="15px">
-                  <Flex direction={{sm:"column",md:"column",lg:"row"}} justifyContent="space-evenly">
-
-                  <Image width="70%" src={project.image} alt={project.name} />
-                  <Box w={{sm:"90%",md:'90%',lg:'45%'}} padding="2%">
+              <Box key={project.id} w={["100%","90%","90%","90%"]} margin={"auto"} marginBottom="5%" px={["20px","20px","10px"]} p={5} mt={{sm:"50px",md:"50px",lg:"40px"}} backgroundColor="#e2ebee" h="auto" border="1px solid black" borderRadius="15px">
+                  <Flex direction={["column", "column","column","row"]} justifyContent="space-evenly">
+                  {/* direction={{sm:"column",md:"column",lg:"row"}} */}
+                  <Image width={["100%","100%","100%","70%"]} src={project.image} alt={project.name} />
+                  <Box  width={["100%","100%","100%","45%"]} padding="2%">
+                  {/* w={{sm:"90%",md:'90%',lg:'45%'}} */}
                       <Heading as="h2" mt={{sm:"10px",md:'10px',lg:'10px'}}>{project.name}</Heading>
-                      <Text textStyle="AboutPara">{project.description}</Text>
+                      <Text textStyle="AboutPara" fontSize={['sm','sm','md','xl']}>{project.description}</Text>
 
-                      <Flex justifyContent="space-evenly">
+                      <Flex justifyContent="space-evenly" marginTop={"10px"}>
                         {project.technologies.map((language) => (
                           <Box>{language}</Box>
                         ))}
@@ -95,9 +97,10 @@ const Project = () => {
                           <Button 
                             leftIcon={<FiExternalLink />} 
                             bg='#234a84' 
-                            height='40px'
-                            width='110px'
-                            fontSize='20px'
+                            size={['sm','sm','md','xl']}
+                            height={['30px','40px']}
+                            width={['90px','110px']}
+                            // fontSize='20px'
                             color='black'
                             border='none' 
                             variant='outline'
@@ -111,15 +114,15 @@ const Project = () => {
                           <Button
                             leftIcon={<BsGithub />} 
                             bg='#234a84' 
-
-                            height='40px'
-                            width='110px'
-                            fontSize='20px'
+                            size={['sm','sm','md','xl']}
+                            height={['20px','40px']}
+                            width={['90px','110px']}
+                            // fontSize='20px'
                             color='black'
                             border='none'  
                             // color='aliceblue'
                             variant='outline'
-                            padding='20px'
+                            padding='10px'
                           >
                             GitHub
                           </Button>
