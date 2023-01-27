@@ -13,7 +13,7 @@ const ChakraBox = chakra(motion.div, {
 
 const About = () => {
   return (
-    <Box id="about" className={Styles.about} width="100%" height={["900px","900px","700px"]} >
+    <Box id="about" className={Styles.about} width="100%" height={["750px","900px","700px"]} >
       <ChakraBox
         initial={{ opacity: 0 }}
         whileInView={{ y: [-15, 0], opacity: 1 }}
@@ -41,7 +41,7 @@ const About = () => {
                       <Spacer />
                       <ListItem>I'm skilled in both Frontend & Backend technologies with immense desire & motivation to work & excel as Full Stack web developer.</ListItem>
                       <Spacer />
-                      <ListItem>Building responsive website front end using ReactJS</ListItem>
+                      <ListItem>Building responsive Front-End website using ReactJS</ListItem>
                       <Spacer />
                       <ListItem>I love to play Football</ListItem>
                   </UnorderedList>
