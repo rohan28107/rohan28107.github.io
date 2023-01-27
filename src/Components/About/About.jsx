@@ -33,9 +33,9 @@ const About = () => {
                 height='90%'
             />
               </Box>
-              <Box  padding={50}>
+              <Box  padding={"10px"}>
                 {/* border='1px solid red' */}
-                  <Heading as='h2' >About Me ✍</Heading>
+                  <Heading as='h2' marginBottom={"10px"} >About Me ✍</Heading>
                   <UnorderedList textAlign='left'>
                       <ListItem>I am a passionate web developer who loves to solve real life problems & I love to learn new things specially related to web development </ListItem>
                       <Spacer />
