@@ -119,7 +119,7 @@ const Home = () => {
                   </Stack>
                   </Center>
               </VStack>
-              <Box  alignItems='center' w={"100%"}  marginLeft={["15px","20px"]}>
+              <Box  alignItems='center' w={"95%"}  marginLeft={["15px","20px"]}>
                 {/* border='1px solid red' paddingTop='30%'*/}
                 {/* <Image 
                 // https://www.alexanderkays.com/content/images/size/w2000/2022/06/how-to-become-a-software-engineer-without-a-degree.webp
