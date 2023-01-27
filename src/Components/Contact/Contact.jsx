@@ -9,10 +9,12 @@ import {
 // import styles from "./Contact.module.css";
 import React from "react";
 // import { GrLinkedinOption } from "react-icons/gr";
-import { FiMail } from "react-icons/fi";
-// import ContactForm from "./ContactForm";
-import { BsFillPhoneFill, BsGithub, BsLinkedin} from "react-icons/bs";
+import { FiCodepen } from "react-icons/fi";
+// import ContactForm from "./ContactForm"; BsFillPhoneFill, , FiMail 
+import {  BsGithub, BsLinkedin} from "react-icons/bs";
 import { motion, isValidMotionProp } from "framer-motion";
+import { SiGmail } from "react-icons/si";
+import { FaMobileAlt } from "react-icons/fa"
 
 const ChakraBox = chakra(motion.div, {
   /**
@@ -26,12 +28,19 @@ const Contact = () => {
   const handleOpenLinkdin = () => {
     window.open(`https://www.linkedin.com/in/rohan-gajare/`, "_blank");
   };
+
   const handleOpenGithub = () => {
     window.open(`https://github.com/rohan28107`, "_blank");
   };
+
+  const handleOpenCodeSandbox = () => {
+    window.open(`https://codesandbox.io/u/rohan28107`, "_blank");
+  };
+
+
   return (
-    <Box id="contact" height="700px">
-      <Heading as='h2' textAlign="center" >
+    <Box id="contact" height="700px"  margin={"auto"}>
+      <Heading as='h2' textAlign="center" marginTop={"20px"}>
       {/* className={styles.contact_Text} */}
         Contact Me
       </Heading>
@@ -52,20 +61,20 @@ const Contact = () => {
           alignItems="center"
           padding="10px"
           m="auto"
-          width={{ base: "90%", md: "87%", lg: "80%" }}
+          width={{ base: "100%", md: "87%", lg: "80%" }}
           borderRadius={"20px"}
           mt={{ base: "30px", md: "40px" }}
           // className={styles.contact_form}
         >
           <Box
-            width={{ base: "40%", md: "20%" }}
+            width={["50%","40%"]}
             padding={{ base: "5px", md: "20px" }}
             height={"40%"}
             // border="1px solid red"
           >
             
-            <Text textAlign={"justify"} fontSize="16px" padding='5%'>
-              I am open to talk regarding freelancing or full-time
+            <Text textAlign={"justify"} fontSize="16px" padding='5%' >
+              I am open to talk regarding Full-Time or Freelancing
               opportunities. Feel free to contact me using your preferred
               medium. Get in Touch I'd love to hear from you.
             </Text>
@@ -73,19 +82,51 @@ const Contact = () => {
             <Box  padding='5%'>
             {/* border='1px solid red' */}
               <Flex width="100%" alignItems={"center"} mt="10px" >
-                <FiMail fontSize={"20px"} />
+                <SiGmail fontSize={["40px","20px"]} />
+                {/* FiMail */}
                 <Text ml={"10px"} fontSize="15px">
                   rohangajre21@gmail.com
                 </Text>
               </Flex>
               <Flex width="100%" alignItems={"center"} mt="10px">
-                <BsFillPhoneFill  fontSize={"20px"} />
+                <FaMobileAlt  fontSize={"20px"} />
+                {/* BsFillPhoneFill */}
                 <Text ml={"10px"} fontSize="15px">
                   +91 8850906630
                 </Text>
               </Flex>
               {/* social Media Links */}
-              <Box
+              <Flex width="100%" alignItems={"center"} mt="10px" onClick={handleOpenLinkdin}>
+                  <BsLinkedin
+                    
+                    cursor={"pointer"}
+                    fontSize={{ base: "none", lg: "20px" }}
+                  />
+                <Text ml={"10px"} fontSize="15px">
+                  rohan28107
+                </Text>
+              </Flex>
+              <Flex width="100%" alignItems={"center"} mt="10px" onClick={handleOpenGithub}>
+                <BsGithub
+                      cursor={"pointer"}
+                      
+                      fontSize={{ base: "none", lg: "20px" }}
+                    />
+                <Text ml={"10px"} fontSize="15px">
+                 rohan28107
+                </Text>
+              </Flex>
+              <Flex width="100%" alignItems={"center"} mt="10px" onClick={handleOpenCodeSandbox}>
+                <FiCodepen
+                      cursor={"pointer"}
+                      
+                      fontSize={{ base: "none", lg: "20px" }}
+                    />
+                <Text ml={"10px"} fontSize="15px">
+                 rohan28107
+                </Text>
+              </Flex>
+              {/* <Box
                 display={"flex"}
                 alignItems={"center"}
                 mt={{ base: "40px", md: "75px", lg: "135px" }}
@@ -94,11 +135,10 @@ const Contact = () => {
                 <Box borderRadius={"full"} >
                   <BsLinkedin
                     onClick={handleOpenLinkdin}
-                    // color="white"
                     cursor={"pointer"}
                     fontSize={{ base: "none", lg: "20px" }}
                   />
-                  {/* </a> */}
+
                 </Box>
                 <Box ml={"10px"} borderRadius={"full"} >
                   <BsGithub
@@ -106,9 +146,8 @@ const Contact = () => {
                     onClick={handleOpenGithub}
                     fontSize={{ base: "none", lg: "20px" }}
                   />
-                  {/* </a> */}
                 </Box>
-              </Box>
+              </Box> */}
             </Box>
            
           </Box>

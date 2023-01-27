@@ -47,6 +47,15 @@ const projectData = [
     description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. Has a carousel of images on Home page. Links to all the social media pages of First Post.",
     technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
     image:first
+  },
+  { 
+    id: 4,
+    name: "First Post",
+    git_url: "https://github.com/rohan28107/apathetic-bikes-8091",
+    live_url: "https://zesty-cactus-26303e.netlify.app/",
+    description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. Has a carousel of images on Home page. Links to all the social media pages of First Post.",
+    technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
+    image:first
   }
 ];
 

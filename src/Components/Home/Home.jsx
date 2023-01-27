@@ -45,13 +45,13 @@ const Home = () => {
             delay: 0.3,
           }}
         >
-          <SimpleGrid  columns={[1, 2, 2]} gap="20" >
+          <SimpleGrid  columns={[1, 2, 2]} gap="20px" marginLeft={["5px","30px"]} >
           {/* padding='20%'  */}
-              <VStack height='100%' width="100%" margin='auto' spacing={10} w={"90%"}>
-              {/* padding='50px' size='4xl' border='1px solid red' */}
+              <VStack height='100%' width="100%" margin='auto' spacing={10} w={"90%"} >
+              {/* padding='50px' size='4xl'  */}
                   <Heading as='h1' fontSize='4xl' >Hello 👋,<span > I'm Rohan Gajare </span> </Heading>
                   {/* <Image src='https://media.tenor.com/2CC_MxnlCwEAAAAM/shake-hand.gif' alt='wave' height={50} width={60}/> */}
-                  <Heading as='h4' size='sm'>Aspiring Full Stack Web Developer at Masai School, Life Long Learner.</Heading>
+                  <Heading as='h4' size={['md','md']}>Aspiring Full Stack Web Developer at Masai School, Life Long Learner.</Heading>
                   
                   <Center>
                   <Stack direction='row' spacing={8} >
@@ -119,7 +119,7 @@ const Home = () => {
                   </Stack>
                   </Center>
               </VStack>
-              <Box  alignItems='center' w={"90%"}>
+              <Box  alignItems='center' w={"90%"}  marginLeft={["15px","20px"]}>
                 {/* border='1px solid red' paddingTop='30%'*/}
                 {/* <Image 
                 // https://www.alexanderkays.com/content/images/size/w2000/2022/06/how-to-become-a-software-engineer-without-a-degree.webp

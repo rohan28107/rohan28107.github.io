@@ -24,18 +24,22 @@ const GitStats = () => {
           delay: 0.3,
         }}
       >
-          <Box w="80%"  margin={"auto"} p={7} h={{sm:"auto",md:"auto",lg:"auto"}} gap="30px" textAlign={{sm:"center",md:"center",lg:"initial"}}>
-              <Heading as='h2' textStyle="AboutHead" mt={{sm:"40px",md:"40px",lg:"30px"}}>Git Stats</Heading>
+          <Box w="80%"  margin={"auto"} p={7} h={{sm:"auto",md:"auto",lg:"auto"}} gap="30px" textAlign="center">
+              <Heading as='h2' textStyle="AboutHead" >Git Stats</Heading>
+              {/* mt={{sm:"40px",md:"40px",lg:"10px"}} */}
               <Text>Checkout my GitHub Stats!!</Text>
-
-              <Box w="70%" margin={"auto"} marginBottom='2%' p={5} padding='20px' mt={{sm:"50px",md:"50px",lg:"40px"}} h="auto" border="1px solid black" borderRadius="15px">
-                <Heading as='h3' textStyle="AboutSubHead" mt={{sm:"40px",md:"40px",lg:"40px"}}>Git Calendar</Heading>
-                <GitHubCalendar username="rohan28107" />
+              {/* mt={{sm:"50px",md:"50px",lg:"40px"}} */}
+              <Box w={["100%","90%","70%"]} margin={"auto"} marginBottom='2%' p={5} padding='20px' marginTop={"20px"}  h="auto" border="1px solid black" borderRadius="15px">
+                <Heading as='h3' size={["sm", "md"]} textStyle="AboutSubHead" >Git Calendar</Heading>
+                {/* mt={{sm:"40px",md:"40px",lg:"40px"}} */}
+                <GitHubCalendar w={["100%","90%","70%"]} marginTop="10px" username="rohan28107" />
               </Box>
 
-              <Box w="90%" margin={"auto"} p={5} mt={{sm:"50px",md:"50px",lg:"40px"}} h="auto" border="1px solid black" borderRadius="15px">
-                <Heading as='h3'  textStyle="AboutSubHead" mt={{sm:"40px",md:"40px",lg:"30px"}}>Git Stats</Heading>
-                <Flex direction={{sm:"column",md:"column",lg:"row"}} justifyContent="space-around" >
+              <Box w="90%" margin={"auto"} p={5}  h="auto" border="1px solid black" borderRadius="15px">
+              {/* mt={{sm:"50px",md:"50px",lg:"40px"}} */}
+                <Heading as='h3' size={["sm", "md"]} textStyle="AboutSubHead" >Git Stats</Heading>
+                {/* mt={{sm:"40px",md:"40px",lg:"30px"}} */}
+                <Flex direction={{base:"column", sm:"column",md:"column",lg:"row"}} marginTop="10px" justifyContent="space-around" gap="10px">
                   <Image src="https://github-readme-stats.vercel.app/api?username=rohan28107&show_icons=true&locale=en" alt="rohan28107" />
                   <Image src="https://github-readme-streak-stats.herokuapp.com/?user=rohan28107&" alt="rohan28107" />
                 </Flex>
