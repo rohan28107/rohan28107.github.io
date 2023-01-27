@@ -24,15 +24,15 @@ const GitStats = () => {
           delay: 0.3,
         }}
       >
-          <Box w="80%"  margin={"auto"} p={7} h={{sm:"auto",md:"auto",lg:"auto"}} gap="30px" textAlign="center">
+          <Box w={["100%","80%"]}  margin={"auto"} p={7} h={{sm:"auto",md:"auto",lg:"auto"}} gap="30px" textAlign="center">
               <Heading as='h2' textStyle="AboutHead" >Git Stats</Heading>
               {/* mt={{sm:"40px",md:"40px",lg:"10px"}} */}
               <Text>Checkout my GitHub Stats!!</Text>
               {/* mt={{sm:"50px",md:"50px",lg:"40px"}} */}
-              <Box w={["100%","90%","70%"]} margin={"auto"} marginBottom='2%' p={5} padding='20px' marginTop={"20px"}  h="auto" border="1px solid black" borderRadius="15px">
+              <Box w={["100%","90%","70%"]} margin={"auto"} marginBottom='2%' p={5} padding={['10px','20px']} marginTop={"20px"}  h="auto" border="1px solid black" borderRadius="15px">
                 <Heading as='h3' size={["sm", "md"]} textStyle="AboutSubHead" >Git Calendar</Heading>
                 {/* mt={{sm:"40px",md:"40px",lg:"40px"}} */}
-                <GitHubCalendar w={["100%","90%","70%"]} marginTop="10px" username="rohan28107" />
+                <GitHubCalendar w={["60%","90%","70%"]} marginTop="10px" username="rohan28107" />
               </Box>
 
               <Box w="90%" margin={"auto"} p={5}  h="auto" border="1px solid black" borderRadius="15px">
