@@ -79,7 +79,7 @@ const Contact = () => {
             <Text textAlign={"justify"} fontSize="16px" padding='5%' >
               I am open to talk regarding Full-Time or Freelancing
               opportunities. Feel free to contact me using your preferred
-              medium. Get in Touch I'd love to hear from you.
+              medium. Get in Touch I'd happy to hear from you.
             </Text>
 
             <Box  padding='5%' textAlign={["center", "start"]}>

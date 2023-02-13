@@ -37,7 +37,7 @@ const About = () => {
                 {/* border='1px solid red' */}
                   <Heading as='h2' marginBottom={"10px"} >About Me ✍</Heading>
                   <UnorderedList textAlign='left'>
-                      <ListItem>I am a passionate web developer who loves to solve real life problems & I love to learn new things specially related to web development </ListItem>
+                      <ListItem>I am a passionate web developer who loves to solve real life problems & learn new things specially related to web development </ListItem>
                       <Spacer />
                       <ListItem>I'm skilled in both Frontend & Backend technologies with immense desire & motivation to work & excel as Full Stack web developer.</ListItem>
                       <Spacer />
