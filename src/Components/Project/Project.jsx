@@ -34,7 +34,7 @@ const projectData = [
     name: "Grow Smarter",
     git_url: "https://github.com/HANUMAT-SHARAN/wicked-edge-6587",
     live_url: "https://dazzling-buttercream-31808d.netlify.app/index.html",
-    description: "Grow Smarter is a SAAS company which provides various service. It has Customer support chat-box. Has pricing page with different pricing for different countries.",
+    description: "Grow Smarter is a SAAS company which provides various service. It has Customer support chat-box. It has pricing page with different pricing for different countries.",
     technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
     icon1: SiJavascript,
     image:grow
@@ -44,7 +44,7 @@ const projectData = [
     name: "First Post",
     git_url: "https://github.com/rohan28107/apathetic-bikes-8091",
     live_url: "https://zesty-cactus-26303e.netlify.app/",
-    description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. Has a carousel of images on Home page. Links to all the social media pages of First Post.",
+    description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. It has a carousel of images on Home page. Links to all the social media pages of First Post.",
     technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
     image:first
   },
@@ -53,7 +53,7 @@ const projectData = [
     name: "First Post",
     git_url: "https://github.com/rohan28107/apathetic-bikes-8091",
     live_url: "https://zesty-cactus-26303e.netlify.app/",
-    description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. Has a carousel of images on Home page. Links to all the social media pages of First Post.",
+    description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. It has a carousel of images on Home page. Links to all the social media pages of First Post.",
     technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
     image:first
   }
