@@ -15,6 +15,9 @@ import {  BsGithub, BsLinkedin} from "react-icons/bs";
 import { motion, isValidMotionProp } from "framer-motion";
 import { SiGmail } from "react-icons/si";
 import { FaMobileAlt } from "react-icons/fa"
+// import {Email} from "./Email";
+// import ContactForm from "./ContactForm";
+import FormContact from "./FormContact";
 
 const ChakraBox = chakra(motion.div, {
   /**
@@ -67,7 +70,7 @@ const Contact = () => {
           // className={styles.contact_form}
         >
           <Box
-            width={["50%","40%"]}
+            width={["80%","40%"]}
             padding={{ base: "5px", md: "20px" }}
             height={"40%"}
             // border="1px solid red"
@@ -79,7 +82,7 @@ const Contact = () => {
               medium. Get in Touch I'd love to hear from you.
             </Text>
 
-            <Box  padding='5%'>
+            <Box  padding='5%' textAlign={["center", "start"]}>
             {/* border='1px solid red' */}
               <Flex width="100%" alignItems={"center"} mt="10px" >
                 <SiGmail fontSize={["40px","20px"]} />
@@ -156,11 +159,12 @@ const Contact = () => {
             padding={{ base: "25px", md: "20px" }}
             color="black"
           >
-            {/* <Box borderRadius="12px" padding='10px' border='1px solid black' margin='5%' marginRight="10%">
-              <Heading as='h3'>Email Me📩</Heading>
-
-              <ContactForm />
-            </Box> */}
+            {/* <Email /> */}
+            <Box borderRadius="12px" padding='10px' border='1px solid black' margin='5%' marginRight="10%">
+              <Heading as='h3' textAlign={"center"}>Email Me📩</Heading>
+              <FormContact />
+              {/* <ContactForm /> */}
+            </Box>
           </Box>
         </Box>
         {/* </Box> */}

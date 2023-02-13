@@ -79,7 +79,7 @@ const Project = () => {
           <Box w="80%" margin={"auto"} p={7} h={{sm:"auto",md:"auto",lg:"auto"}} textAlign="center">
           {/* textAlign={{sm:"center",md:"center",lg:"center"}} */}
               <Heading as='h2' marginBottom="2%" mt={{sm:"40px",md:"40px",lg:"30px"}}>Projects</Heading>
-              <Text fontSize={["md","xl"]} > My projects make use of a vast variety of latest technology tools. My best experience is to create React Project and JavaScript Projects. Below are some of my projects. All of the mentioned projects are on GitHub and have Live link.</Text>
+              <Text fontSize={["md","xl"]} marginBottom={"5%"}> My projects make use of a vast variety of latest technology tools. My best experience is to create React Project and JavaScript Projects. Below are some of my projects. All of the mentioned projects are on GitHub and have Live link.</Text>
           
           <Fade direction='left' cascade >
           {

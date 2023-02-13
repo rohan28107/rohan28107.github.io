@@ -45,35 +45,14 @@ const Home = () => {
             delay: 0.3,
           }}
         >
-          <SimpleGrid  columns={[1, 2, 2]} gap="20px" marginLeft={["5px","30px"]} >
-          {/* padding='20%'  */}
-              <VStack height='100%' width="100%" margin='auto' spacing={10} w={"90%"} >
-              {/* padding='50px' size='4xl'  */}
+          <SimpleGrid  columns={[1, 2, 2]} gap="10px" >
+              <VStack height='100%' width="100%" margin='auto' spacing={10} w={"90%"} marginLeft={["15px","20px","80px"]} >
                   <Heading as='h1' fontSize='4xl' >Hello 👋,<span > I'm Rohan Gajare </span> </Heading>
-                  {/* <Image src='https://media.tenor.com/2CC_MxnlCwEAAAAM/shake-hand.gif' alt='wave' height={50} width={60}/> */}
                   <Heading as='h4' size={['md','md']}>Aspiring Full Stack Web Developer at Masai School, Life Long Learner.</Heading>
-                  
+
                   <Center>
                   <Stack direction='row' spacing={8} >
-                    {/* <Link href='https://drive.google.com/file/d/1dW4RpRe9nvD8pbw7erbV9NUjNx1O0S-Z/view?usp=share_link' target='_blank' textDecoration='none' download>
-                      <Button 
-                        size={['sm','md','xl']}
-                        height='48px'
-                        width='150px'
-                        border='none' 
-                        leftIcon={<BsFileEarmarkPerson />} 
-                        bg='#234a84' 
-                        // variant='outline' 
-                        colorScheme='teal'
-                        variant='outline'
-                        fontSize='20px'
-                        // color='aliceblue'
-                        color='black'
-                        // textDecoration="none"
-                      >
-                        Resume
-                      </Button>
-                    </Link> */}
+
 
                     <Link
                         onClick={handleDownloadNewPageResume}
@@ -83,7 +62,6 @@ const Home = () => {
                         cursor="pointer"
                     >
                       <Button
-                        // colorScheme={'teal'}
                         bg='#234a84'
                         mr={4}
                         variant='solid'
@@ -91,7 +69,6 @@ const Home = () => {
                         height='48px'
                         width='150px'
                         fontSize='20px'
-                        // color='aliceblue;'
                         color='black'
                         border='none'
                         leftIcon={<AiOutlineFilePdf  />}
@@ -109,7 +86,6 @@ const Home = () => {
                         height='48px'
                         width='150px'
                         fontSize='20px'
-                        // color='aliceblue;'
                         color='black'
                         border='none' 
                       >
@@ -119,17 +95,7 @@ const Home = () => {
                   </Stack>
                   </Center>
               </VStack>
-              <Box  alignItems='center' w={"95%"}  marginLeft={["15px","20px"]}>
-                {/* border='1px solid red' paddingTop='30%'*/}
-                {/* <Image 
-                // https://www.alexanderkays.com/content/images/size/w2000/2022/06/how-to-become-a-software-engineer-without-a-degree.webp
-                    src='https://avatars.githubusercontent.com/u/112626910?v=4' 
-                    alt="Rohan"
-                    // width='60%'
-                    // height='60%'
-                    borderRadius='full'
-                    boxSize='150px'
-                /> */}
+              <Box  alignItems='center' w={"95%"}  marginLeft={["15px","20px","80px"]}  >
                 <Image
                   borderRadius='250px'
                   boxSize='350px'
