@@ -41,8 +41,8 @@ const skillsData = [
     },
     {
         id:5,
-        skillName:"Git",
-        img: git
+        skillName:"ChakraUi",
+        img: chakraui
     },
     {
         id:6,
@@ -61,8 +61,8 @@ const skillsData = [
     },
     {
         id:9,
-        skillName:"ChakraUi",
-        img: chakraui
+        skillName:"Redux",
+        img: redux
     },
     {
         id:10,
@@ -71,8 +71,9 @@ const skillsData = [
     },
     {
         id:11,
-        skillName:"Redux",
-        img: redux
+        skillName:"Git",
+        img: git
+
     },
     {
         id:12,
