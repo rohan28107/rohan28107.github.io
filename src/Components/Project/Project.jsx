@@ -65,7 +65,7 @@ const projectData = [
     id: 5,
     name: "Near Buy",
     git_url: "https://github.com/vinaybarve/lying-blade-5948",
-    live_url: "https://unrivaled-dolphin-8cc168.netlify.app/",
+    live_url: "https://just-buy-phi.vercel.app/",
     description: "A group project that is made during the time span of 5 days.NearBuy helps you discover the best things to do, eat and buy – wherever you are! Make every day awesome with NearBuy",
     technologies: [<SiReact />, <SiRedux />, <SiNodedotjs />, <SiExpress />, <SiMongodb /> ,<SiHtml5 />, <SiCss3 />, <SiChakraui />, <SiJavascript />],
     image:nearbuy
