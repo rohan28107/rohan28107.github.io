@@ -5,6 +5,7 @@ import {
   chakra,
   shouldForwardProp,
   Flex,
+  Center,
 } from "@chakra-ui/react";
 // import styles from "./Contact.module.css";
 import React from "react";
@@ -70,19 +71,20 @@ const Contact = () => {
           // className={styles.contact_form}
         >
           <Box
-            width={["80%","40%"]}
+            width={["80%","60%"]}
             padding={{ base: "5px", md: "20px" }}
             height={"40%"}
             // border="1px solid red"
           >
             
-            <Text textAlign={"justify"} fontSize="16px" padding='5%' >
+            <Text textAlign={"justify"}  padding='5%' fontSize={["md", "xl"]} >
+            {/* fontSize="16px" */}
               I am open to talk regarding Full-Time or Freelancing
               opportunities. Feel free to contact me using your preferred
               medium. Get in Touch I'd happy to hear from you.
             </Text>
 
-            <Box  padding='5%' textAlign={["center", "start"]}>
+            <Box  padding='5%' textAlign={["center", "start"]} fontSize={["md", "xl"]}>
             {/* border='1px solid red' */}
               <Flex width="100%" alignItems={"center"} mt="10px" >
                 <SiGmail fontSize={["40px","20px"]} />
@@ -166,6 +168,9 @@ const Contact = () => {
               {/* <ContactForm /> */}
             </Box>
           </Box>
+        </Box>
+        <Box>
+          <Center>Made by Rohan❤️</Center>
         </Box>
         {/* </Box> */}
       </ChakraBox>{" "}

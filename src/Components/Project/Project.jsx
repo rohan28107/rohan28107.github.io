@@ -4,10 +4,13 @@ import Styles from "./Project.module.css";
 import desire from "./Images/desire_cart_page.png";
 import first from "./Images/first_post_page.png";
 import grow from "./Images/grow_smarter_page.png";
+import nutribest from "./Images/nurtibest.png";
+import nearbuy from "./Images/nearbuy.png";
+
 // import {BsLink45Deg } from 'react-icons/bs';
 import { Fade } from "react-awesome-reveal";
 import { BsGithub } from 'react-icons/bs';
-import { SiChakraui, SiCss3, SiHtml5, SiJavascript, SiReact } from "react-icons/si"
+import { SiChakraui, SiCss3, SiExpress, SiHtml5, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiRedux } from "react-icons/si"
 import { FiExternalLink } from "react-icons/fi";
 import { motion, isValidMotionProp } from "framer-motion";
 
@@ -41,12 +44,13 @@ const projectData = [
   },
   { 
     id: 3,
-    name: "First Post",
-    git_url: "https://github.com/rohan28107/apathetic-bikes-8091",
-    live_url: "https://zesty-cactus-26303e.netlify.app/",
-    description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. It has a carousel of images on Home page. Links to all the social media pages of First Post.",
-    technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
-    image:first
+    name: "NutriBest",
+    git_url: "https://github.com/akaushik509/internal-appliance-3345",
+    live_url: "https://nutribest-mocha.vercel.app/",
+    description: "NutriBest.com is collaborative project, It is a great place for people serious about health and fitness. WE created this website in 5 days.",
+    technologies: [<SiReact />, <SiNextdotjs />, <SiRedux /> ,<SiHtml5 />, <SiCss3 />, <SiChakraui />, <SiJavascript />],
+    image:nutribest
+    
   },
   { 
     id: 4,
@@ -56,6 +60,15 @@ const projectData = [
     description: "First Post is a News website which gives update on latest news to users. Has different topics of news with each separate page. It has a carousel of images on Home page. Links to all the social media pages of First Post.",
     technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />],
     image:first
+  },
+  { 
+    id: 5,
+    name: "Near Buy",
+    git_url: "https://github.com/vinaybarve/lying-blade-5948",
+    live_url: "https://unrivaled-dolphin-8cc168.netlify.app/",
+    description: "A group project that is made during the time span of 5 days.NearBuy helps you discover the best things to do, eat and buy – wherever you are! Make every day awesome with NearBuy",
+    technologies: [<SiReact />, <SiRedux />, <SiNodedotjs />, <SiExpress />, <SiMongodb /> ,<SiHtml5 />, <SiCss3 />, <SiChakraui />, <SiJavascript />],
+    image:nearbuy
   }
 ];
 
