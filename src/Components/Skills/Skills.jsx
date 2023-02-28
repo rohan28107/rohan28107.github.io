@@ -257,6 +257,7 @@ const Skills = () => {
           delay: 0.3,
         }}
         >
+            {/* add */}
         <Heading as='h2' textAlign={"center"}  marginTop={"25px"}  marginBottom="3%" >Languages & Technologies</Heading>
         <SimpleGrid columns={[1, 2, 2, 3]} width="100%" height={["850px","800px","500px"]} gap={["10px","20px","30px"]} justifyContent={"center"}>
                 <Box textAlign={"center"}  border="1px solid black" borderRadius="15px" padding={"15px"} >
