@@ -11,7 +11,7 @@ import {
   } from '@chakra-ui/react';
   import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
   import { AiOutlineFilePdf } from "react-icons/ai";
-  import Resume from "../../Files/Rohan_Gajare_Resume.pdf";
+  import Resume from "../../Files/fw21_0913_Rohan_Gajare_Resume.pdf";
   import Logo from "./Rohan.png";
   import Styles from "./Navbar.module.css";
   import {Link} from 'react-scroll';
@@ -50,7 +50,7 @@ import {
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'Rohan_Gajare_Resume.pdf';
+            alink.download = 'fw21_0913_Rohan_Gajare_Resume.pdf';
             alink.click();
         })
     })

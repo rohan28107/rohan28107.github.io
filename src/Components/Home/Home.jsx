@@ -1,7 +1,7 @@
 import { Box, Button, Center, chakra, Heading, Image, Link, shouldForwardProp, SimpleGrid, Stack, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { BsGithub } from "react-icons/bs"
-import Resume from "../../Files/Rohan_Gajare_Resume.pdf";
+import Resume from "../../Files/fw21_0913_Rohan_Gajare_Resume.pdf";
 import Styles from "./Home.module.css";
 import { motion, isValidMotionProp } from "framer-motion";
 import { AiOutlineFilePdf } from 'react-icons/ai';
@@ -27,7 +27,7 @@ const Home = () => {
           // Setting various property values
           let alink = document.createElement('a');
           alink.href = fileURL;
-          alink.download = 'Rohan_Gajare_Resume.pdf';
+          alink.download = 'fw21_0913_Rohan_Gajare_Resume.pdf';
           alink.click();
       })
   })
