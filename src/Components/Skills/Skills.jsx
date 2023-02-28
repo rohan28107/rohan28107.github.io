@@ -248,7 +248,7 @@ const ChakraBox = chakra(motion.div, {
 
 const Skills = () => {
   return (
-    <Box id="skills" height={["1250px","1050px","750px"]} className={Styles.Skills} padding="10px">
+    <Box id="skills" height={["1250px","1200px","1200px","750px"]} className={Styles.Skills} padding="10px">
         <ChakraBox
         initial={{ opacity: 0 }}
         whileInView={{ y: [-15, 0], opacity: 1 }}
@@ -258,7 +258,7 @@ const Skills = () => {
         }}
         >
         <Heading as='h2' textAlign={"center"}  marginTop={"25px"}  marginBottom="3%" >Languages & Technologies</Heading>
-        <SimpleGrid columns={[1, 2, 3]} width="100%" height={["850px","800px","500px"]} gap={["10px","20px","30px"]} justifyContent={"center"}>
+        <SimpleGrid columns={[1, 2, 2, 3]} width="100%" height={["850px","800px","500px"]} gap={["10px","20px","30px"]} justifyContent={"center"}>
                 <Box textAlign={"center"}  border="1px solid black" borderRadius="15px" padding={"15px"} >
                     <Heading as="h2" fontSize={["md", "2xl"]} marginBottom={"20px"} >FrontEnd</Heading>
                     <SimpleGrid columns={3} gap="40px" textAlign={"center"}>
