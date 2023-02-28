@@ -17,7 +17,7 @@ const Home = () => {
 
   const handleDownloadNewPageResume = () => {
     const newWindow = window.open("https://drive.google.com/file/d/1dW4RpRe9nvD8pbw7erbV9NUjNx1O0S-Z/view?usp=share_link", "_blank", "noopener,noreferrer");
-
+    // https://drive.google.com/file/d/1dW4RpRe9nvD8pbw7erbV9NUjNx1O0S-Z/view?usp=share_link
     if (newWindow) newWindow.opener = null;
 
     fetch(Resume).then(response => {
