@@ -46,7 +46,7 @@ const projectData = [
     id: 3,
     name: "NutriBest",
     git_url: "https://github.com/akaushik509/internal-appliance-3345",
-    live_url: "https://nutribest-mocha.vercel.app/",
+    live_url: "https://nutribest-healthkart-rohan28107.vercel.app/",
     description: "NutriBest.com is collaborative project, It is a great place for people serious about health and fitness. WE created this website in 5 days.",
     technologies: [<SiReact />, <SiNextdotjs />, <SiRedux /> ,<SiHtml5 />, <SiCss3 />, <SiChakraui />, <SiJavascript />],
     image:nutribest
