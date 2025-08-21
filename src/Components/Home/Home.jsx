@@ -72,8 +72,10 @@ const Home = () => {
               Hello 👋,<span> I'm Rohan Gajare </span>{" "}
             </Heading>
             <Heading as="h4" size={["md", "md"]}>
-              Aspiring Full Stack Web Developer at Masai School, Life Long
-              Learner.
+              Turning ideas into elegant, responsive interfaces — where clean
+              code meets seamless user experiences.
+              {/* Aspiring Full Stack Web Developer at Masai School, Life Long
+              Learner. */}
             </Heading>
 
             <Center>
