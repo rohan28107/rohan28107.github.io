@@ -4,9 +4,6 @@ import Styles from "./About.module.css";
 import { motion, isValidMotionProp } from "framer-motion";
 
 const ChakraBox = chakra(motion.div, {
-  /**
-   * Allow motion props and non-Chakra props to be forwarded.
-   */
   shouldForwardProp: (prop) =>
     isValidMotionProp(prop) || shouldForwardProp(prop),
 });
@@ -23,10 +20,8 @@ const About = () => {
         }}
       >
           <SimpleGrid columns={[1, null, 2]} spacing='30px' height="380px" padding='10%'>
-              <Box > 
-                {/* border='1px solid red' */}
+              <Box >
               <Image
-            // https://www.alexanderkays.com/content/images/size/w2000/2022/06/how-to-become-a-software-engineer-without-a-degree.webp
                 src='https://performetris.com/wp-content/uploads/performetris-banner.png' 
                 alt="SVG"
                 width='100%'
@@ -34,7 +29,6 @@ const About = () => {
             />
               </Box>
               <Box  padding={"10px"} fontSize={["md", "xl"]}>
-                {/* border='1px solid red' */}
                   <Heading as='h2' marginBottom={"10px"} >About Me ✍</Heading>
                   <UnorderedList textAlign='left'>
                       <ListItem >I am a passionate web developer who loves to solve real life problems & learn new things specially related to web development </ListItem>

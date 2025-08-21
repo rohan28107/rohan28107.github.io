@@ -13,10 +13,6 @@
       outline: none;
       border-radius: 5px;
       border: 1px solid rgb(220, 220, 220);
-
-      /* &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      } */
     }
 
     textarea {
@@ -29,10 +25,6 @@
       outline: none;
       border-radius: 5px;
       border: 1px solid rgb(220, 220, 220);
-
-      /* &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      } */
     }
 
     label {

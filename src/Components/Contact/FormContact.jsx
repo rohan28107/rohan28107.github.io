@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-// import styled from "styled-components";
 import Styles from "./Contact.module.css";
-// npm i @emailjs/browser
 
 const FormContact = () => {
   const form = useRef();
@@ -46,5 +44,3 @@ const FormContact = () => {
 };
 
 export default FormContact;
-
-// Styles
