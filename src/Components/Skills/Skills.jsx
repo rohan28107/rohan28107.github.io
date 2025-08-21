@@ -6,7 +6,6 @@ import {
   chakra,
   SimpleGrid,
   Grid,
-  Flex,
 } from "@chakra-ui/react";
 import React from "react";
 import amazonaws from "./Images/amazon-aws.png";
